@@ -49,13 +49,17 @@ cat *.fasta > dengue_merged.fasta
 
 ```
 grep '^>' dengue_merged.fasta | wc -l
-``` 
+```
+### output
+>5
 
 ### How many sequences does the dengue_merged.fasta have
 
 ```
 grep -v '^>' dengue_merged.fasta | wc -c
 ```
+### output
+>35801
 
 ### Extract the headers and put them in a new file called dengue_headers.txt
 
