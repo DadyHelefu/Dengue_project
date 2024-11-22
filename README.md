@@ -75,7 +75,7 @@ grep '^>' dengue_merged.fasta > dengue_headers.txt
 ### Extract only the names of viruses and create the file called viruses.txt
 
 ```
-awk '{print $2 $3 $4}' dengue_headers.txt | sed 's/complete//g
+awk '{print $2 $3 $4}' dengue_headers.txt | sed 's/complete//g'
 ```
 
 ### output
@@ -105,5 +105,5 @@ awk '{print $1}' dengue_headers.txt
 ### Create a file for sequences and name it dengue_seq.txt and replace with small letters
 
 ```
-grep -v '^>' dengue_merged.fasta | tr '[:upper:] [:lower:]' > dengue_seq.txt
+grep -v '^>' dengue_merged.fasta | tr '[:upper:]' '[:lower:]' > dengue_seq.txt
 ```
