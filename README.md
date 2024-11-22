@@ -1,7 +1,9 @@
 # Dengue_project
-##Create the directories
-##code 
-'''mkdir -p Project_dengue/Data/Raw_data Project_dengue/Data/Processed_data Project_dengue/Codes'''
+## Create the directories
+
+```
+mkdir -p Project_dengue/Data/Raw_data Project_dengue/Data/Processed_data Project_dengue/Codes
+```
 
 ##Download and put in the appropriate directory then unzip the file
 ##code
@@ -17,7 +19,9 @@
 
 ##How many lines in each fasta file
 ##code
-'''wc -l *.fasta'''
+```
+wc -l *.fasta
+```
 
 ##output
 |No of lines | sequences             |
@@ -27,7 +31,6 @@
 |   94       |  dengueseq3.fasta     |
 |  113       |  dengueseq4.fasta     |
 |  157       |  dengueseq5.fasta     |
-|------------|-----------------------|
 |  521       |     total             |
 
 ##Merge fasta file to merged.fasta file
